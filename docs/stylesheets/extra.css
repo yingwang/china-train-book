@@ -1,0 +1,5 @@
+/* Center hero images that use the .center class on the <img> */
+.md-content img.center {
+  display: block;
+  margin: 1.5rem auto;
+}
