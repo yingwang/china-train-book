@@ -24,6 +24,8 @@ markdown_extensions:
   - toc:
       permalink: true
       toc_depth: 2
+      # 中文标题需要保留原字符做锚点，否则 index/06-themed 的城市跳转会全部失效
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
   - admonition
   - attr_list
 extra_css:
